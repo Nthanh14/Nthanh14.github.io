@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - S.t Jewelry</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="home-page">
+  <header>
+    <h1>S.t Jewelry</h1>
+        <nav>
+          <input type="text" id="searchInput" placeholder="🔍Look for items..." />
+          <a href="index.html">Regarding the homepage</a>
+          <a href="cart.html">Cart</a>
+          <a href="login.html">Login</a>
+
+        </nav>
+  </header>
+
+<body>
+  <main>
+    <section class="container-section">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="info">
+            <p><strong>Address:</strong> 123 ABC Street, District 1, HCMC</p>
+            <p><strong>Email:</strong> stjewelry@gmail.com</p>
+            <p><strong>Phone:</strong> 0123 456 789</p>
+        </div>
+        <form class="container-form" id="contactForm" action="#" method="POST">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Content</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send contact</button>
+        </form>
+
+        <div class="container-footer">
+          <p class="contact-footer-text">
+              No profile yet?
+              <a href="profile.html">Create profile</a>
+          </p>
+        </div>
+
+    </div>
+    </section>
+  </main>
+
+
+     <footer>
+      <div style="display: flex; justify-content: center; gap: 64px; flex-wrap: wrap;">
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">Email: stjewelry@gmail.com</a></li>
+            <li><a href="#">Phone: 0123 456 789</a></li>
+            <li><a href="#">Address: 123 ABC Street, District 1, HCMC</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <h3>S.t Jewelry</h3>
+        <p>&copy; 2025 Jewelry Store. All rights reserved.</p>
+      </div>
+    </footer>
+        <script src="script.js"></script>
+
+</body>
+</html>

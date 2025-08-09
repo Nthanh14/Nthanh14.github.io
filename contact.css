@@ -1,0 +1,283 @@
+/* contact.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  color: #bfae9e;
+}
+/* Định dạng cho toàn bộ đoạn văn bản */
+.contact-footer-text {
+  text-align: center; /* Căn giữa đoạn văn bản */
+  margin-top: 20px; /* Thêm khoảng cách phía trên */
+  font-size: 16px; /* Tăng kích thước chữ */
+  color: #bfae9e; /* Đổi màu chữ */
+}
+
+.contact-footer-text a {
+  color: #a18f7e; /* Màu xanh nổi bật cho liên kết */
+  font-weight: bold; /* In đậm chữ */
+  transition: color 0.3s; /* Thêm hiệu ứng chuyển đổi màu */
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #bfae9e;
+}
+
+.info {
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.info p {
+  margin: 8px 0;
+  
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+ border: 1px solid #e5e0d8;
+  border-radius: 20px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  color: #bfae9e;
+  border: 1px solid #e5e0d8;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background: #f7f3ea;
+  color: #a68c6d;
+}
+
+
+
+header {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px #e5e0d8;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+/* LOGO - S.t Jewelry */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #bfae9e;
+  letter-spacing: 2px;
+  font-size: 2.3em;
+  text-shadow: 0 2px 8px #f3e7e1;
+  margin: 0 0 16px 0;
+}
+
+/* NAVIGATION AREA */
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* SEARCH FORM */
+#searchForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #e5e0d8;
+  font-size: 1em;
+  outline: none;
+  background: #fffdfa;
+  color: #7c6f5f;
+  box-shadow: 0 1px 4px #f3e7e1;
+  width: 200px;
+}
+
+/* NAV LINKS */
+header nav a {
+  color: #bfae9e;
+  font-weight: 600;
+  font-size: 1.08em;
+  padding: 7px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header nav a:hover {
+  background: #e9dfd8;
+  color: #5a4332;
+  box-shadow: 0 2px 12px #d8cfc5;
+}
+
+
+
+/* ==== FOOTER CHUNG ==== */
+footer {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  border-radius: 24px 24px 0 0;
+  margin-top: 48px;
+  padding: 32px 0 16px 0;
+}
+
+footer .footer-section {
+  min-width: 180px;
+}
+
+footer h3 {
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  color: #a68c6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #6d4c41; /* màu khi rê chuột */
+}
+
+footer .footer-center {
+  text-align: center;
+  margin-top: 32px;
+  color: #bfae9e;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+footer .footer-center h3 {
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* LOGO HOẶC TIÊU ĐỀ */
+header h1 {
+  font-family: 'Apple Chancery', 'Playfair Display', 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.3em;
+  color: #bfae9e;
+  margin: 0 0 4px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #f3e7e1;
+  font-weight: 700;
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: #bfae9e;
+  font-size: 1.08em;
+  font-weight: 600;
+  padding: 7px 18px;
+  border-radius: 20px;
+  margin: 0;
+  position: relative;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  background: none;
+  box-shadow: none;
+  font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+}
+
+nav a:hover {
+  color: #bfae9e;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #e5e0d8;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+nav a.active {
+  color: #fff;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  font-weight: bold;
+  font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+}
+
+nav a.active::after {
+  width: 100%;
+  background: #bfae9e;
+}
+@media (max-width: 700px) {
+  header {
+    padding: 18px 8px 12px 8px;
+    border-radius: 0 0 18px 18px;
+  }
+  header h1 {
+    font-size: 1.3em;
+    font-family: 'Playfair Display', 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  }
+  nav {
+    gap: 8px;
+    font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+  }
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.98em;
+    font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+  }
+}

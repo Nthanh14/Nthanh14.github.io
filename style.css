@@ -1,0 +1,420 @@
+/* ====== HEADER CHUNG ====== */
+header {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px #e5e0d8;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+/* LOGO - S.t Jewelry */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #bfae9e;
+  letter-spacing: 2px;
+  font-size: 2.3em;
+  text-shadow: 0 2px 8px #f3e7e1;
+  margin: 0 0 16px 0;
+}
+
+/* NAVIGATION AREA */
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* SEARCH FORM */
+#searchForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #e5e0d8;
+  font-size: 1em;
+  outline: none;
+  background: #fffdfa;
+  color: #7c6f5f;
+  box-shadow: 0 1px 4px #f3e7e1;
+  width: 200px;
+}
+
+/* NAV LINKS */
+header nav a {
+  color: #bfae9e;
+  font-weight: 600;
+  font-size: 1.08em;
+  padding: 7px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header nav a:hover {
+  background: #e9dfd8;
+  color: #5a4332;
+  box-shadow: 0 2px 12px #d8cfc5;
+}
+
+
+/* ==== FOOTER CHUNG ==== */
+footer {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  border-radius: 24px 24px 0 0;
+  margin-top: 48px;
+  padding: 32px 0 16px 0;
+}
+
+footer .footer-section {
+  min-width: 180px;
+}
+
+footer h3 {
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  color: #a68c6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #6d4c41; /* màu khi rê chuột */
+}
+
+footer .footer-center {
+  text-align: center;
+  margin-top: 32px;
+  color: #bfae9e;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+footer .footer-center h3 {
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* LOGO HOẶC TIÊU ĐỀ */
+header h1 {
+  font-family: 'Apple Chancery', 'Playfair Display', 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.3em;
+  color: #bfae9e;
+  margin: 0 0 4px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #f3e7e1;
+  font-weight: 700;
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: #bfae9e;
+  font-size: 1.08em;
+  font-weight: 600;
+  padding: 7px 18px;
+  border-radius: 20px;
+  margin: 0;
+  position: relative;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  background: none;
+  box-shadow: none;
+  font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+}
+
+nav a:hover {
+  color: #bfae9e;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #e5e0d8;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+nav a.active {
+  color: #fff;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  font-weight: bold;
+  font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+}
+
+nav a.active::after {
+  width: 100%;
+  background: #bfae9e;
+}
+@media (max-width: 700px) {
+  header {
+    padding: 18px 8px 12px 8px;
+    border-radius: 0 0 18px 18px;
+  }
+  header h1 {
+    font-size: 1.3em;
+    font-family: 'Playfair Display', 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  }
+  nav {
+    gap: 8px;
+    font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+  }
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.98em;
+    font-family: 'Quicksand', 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+  }
+}
+
+/* index PAGE */
+.home-title {
+  text-align: center;
+  color: #ac8566;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  overflow-x: auto; 
+  padding: 20px 0;
+}
+
+.home-card {
+  background: #fffdfa;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #e5e0d8;
+  border: 1.5px solid #e5e0d8;
+  padding: 18px;
+  width: 240px; 
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px #e1d9cf;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #f3e7e1;
+  box-shadow: 0 2px 8px #f3e7e1;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.home-name {
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+  margin: 8px 0 4px 0;
+  font-size: 1.1em;
+}
+
+.home-price {
+  color: #a68c6d;
+  font-size: 1em;
+}
+
+.add-to-cart {
+  margin-top: 28px; 
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%); 
+  color: #bfae9e; 
+  padding: 12px 28px; 
+  border-radius: 25px;
+  text-decoration: none; 
+  font-weight: 600; 
+  font-size: 1.1em; 
+  box-shadow: 0 2px 8px #e5e0d8;
+  border: 1px solid #e5e0d8; 
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+
+/* ==== LOGIN PAGE ==== */
+
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  margin: 48px 0;
+  flex-wrap: wrap;
+}
+
+.auth-box {
+  min-width: 340px;
+  max-width: 440px;
+  box-shadow: 0 4px 24px #e5e0d8;
+  border-radius: 24px;
+  background: #fffdfa;
+  padding: 48px 32px 32px 32px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #bfae9e;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #a68c6d;
+  font-weight: 600;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e0d8;
+  border-radius: 14px;
+  background: #fefcf9;
+  color: #7c6f5f;
+  font-size: 1em;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  color: #bfae9e;
+  border: 1px solid #e5e0d8;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: #f7f3ea;
+  color: #a68c6d;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 18px;
+  color: #7c6f5f;
+  font-size: 0.95em;
+}
+
+.auth-footer a {
+  color: #bfae9e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  color: #a68c6d;
+}
+
+
+/* === Cart Page Styling === */
+
+
+.cart-page h2 {
+  text-align: center;
+  color: #bfae9e;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: #fffdfa;
+  box-shadow: 0 2px 8px rgba(229, 224, 216, 0.6);
+}
+
+#cart-table thead th {
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  color: #bfae9e;
+  font-weight: 600;
+  font-size: 1.05em;
+  padding: 12px;
+  text-align: left;
+}
+
+#cart-table tbody td {
+  padding: 14px 12px;
+  border-top: 1px solid #f0eae2;
+  color: #6e6259;
+  font-size: 0.95em;
+}
+
+#total {
+  text-align: right;
+  font-size: 1.2em;
+  color: #bfae9e;
+  margin: 18px 0 28px 0;
+  font-weight: 600;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #ffffff 60%, #f7f3ea 100%);
+  color: #bfae9e;
+  border: 1px solid #e5e0d8;
+  border-radius: 28px;
+  padding: 16px 54px;
+  font-size: 1.15em;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(229, 224, 216, 0.7);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+#checkout-btn:hover {
+  background: #f7f3ea;
+  transform: scale(1.03);
+}
+
+

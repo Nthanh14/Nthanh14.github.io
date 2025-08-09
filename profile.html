@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - S.t Jewelry</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body class="home-page">
+  <header>
+    <h1>S.t Jewelry</h1>
+        <nav>
+          <input type="text" id="searchInput" placeholder="🔍Look for items..." />
+          <a href="index.html">Regarding the homepage</a>
+          <a href="cart.html">Cart</a>
+          <a href="login.html">Login</a>
+
+        </nav>
+  </header>
+
+<main class="main-content">
+    <div class="container">
+        <section class="profile-section">
+            <div class="profile-card">
+                <h2 class="profile-title">Your profile</h2>
+                <form class="profile-form" action="index.html" method="POST">
+                    <div class="form-group">
+                        <label for="profileName">Fullname:</label>
+                        <input type="text" id="profileName" name="profileName" value="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profileEmail">Email:</label>
+                        <input type="email" id="profileEmail" name="profileEmail" value="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profilePhone">Phone:</label>
+                        <input type="tel" id="profilePhone" name="profilePhone" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profileAddress">Address:</label>
+                        <input type="text" id="profileAddress" name="profileAddress" value="">
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">Update profile</button>
+                    </div>
+                </form>
+                <div class="profile-footer">
+                  <p class="profile-footer-text">
+                      You have a profile?
+                      <a href="contact.html">Contact</a>
+                  </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+  <footer>
+    <div style="display: flex; justify-content: center; gap: 64px; flex-wrap: wrap;">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">Email: stjewelry@gmail.com</a></li>
+          <li><a href="#">Phone: 0123 456 789</a></li>
+          <li><a href="#">Address: 123 ABC Street, District 1, HCMC</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-center">
+      <h3>S.t Jewelry</h3>
+      <p>&copy; 2025 Jewelry Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

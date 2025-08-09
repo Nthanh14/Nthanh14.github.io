@@ -1,0 +1,187 @@
+/* Tổng quan */
+body {
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  color: #bfae9e;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Header - giữ nguyên phong cách bạn đã cung cấp */
+header {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px #e5e0d8;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #bfae9e;
+  letter-spacing: 2px;
+  font-size: 2.3em;
+  text-shadow: 0 2px 8px #f3e7e1;
+  margin: 0 0 16px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#searchInput {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #e5e0d8;
+  font-size: 1em;
+  outline: none;
+  background: #fffdfa;
+  color: #7c6f5f;
+  box-shadow: 0 1px 4px #f3e7e1;
+  width: 200px;
+}
+
+header nav a {
+  color: #bfae9e;
+  font-weight: 600;
+  font-size: 1.08em;
+  padding: 7px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7f3ea 60%, #f3e7e1 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+  background: #e9dfd8;
+  color: #5a4332;
+  box-shadow: 0 2px 12px #d8cfc5;
+}
+
+/* Form Profile */
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #bfae9e;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #e5e0d8;
+  border-radius: 20px;
+  background: #fffdfa;
+  color: #a68c6d;
+}
+
+.profile-form input[readonly] {
+  background: #fffdfa;
+  color: #a68c6d;
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  color: #bfae9e;
+  border: 1px solid #e5e0d8;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e5e0d8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button-group button:hover {
+  background: #f7f3ea;
+  color: #a68c6d;
+}
+
+.profile-footer-text {
+  text-align: center; 
+  color: #bfae9e;
+}
+
+.profile-footer-text a { 
+  color: #a18f7e; 
+  font-weight: bold; 
+  transition: color 0.3s; 
+}
+
+/* Footer - giữ nguyên phong cách bạn đã cung cấp */
+footer {
+  background: linear-gradient(90deg, #fff 60%, #f7f3ea 100%);
+  box-shadow: 0 2px 8px #e5e0d8;
+  border-radius: 24px 24px 0 0;
+  margin-top: 48px;
+  padding: 32px 0 16px 0;
+}
+
+footer .footer-section {
+  min-width: 180px;
+}
+
+footer h3 {
+  color: #bfae9e;
+  font-family: 'Playfair Display', serif;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  color: #a68c6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #6d4c41;
+}
+
+footer .footer-center {
+  text-align: center;
+  margin-top: 32px;
+  color: #bfae9e;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+footer .footer-center h3 {
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+}
